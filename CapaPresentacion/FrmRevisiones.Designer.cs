@@ -53,23 +53,11 @@
             this.txtAlumno = new System.Windows.Forms.TextBox();
             this.txtRegistro = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnCancel2Rev = new System.Windows.Forms.Button();
+            this.btnCancel1Rev = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnGuardar1Rev = new System.Windows.Forms.Button();
-            this.btnCargarTribu2 = new System.Windows.Forms.Button();
-            this.btnElegirTribu1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -86,8 +74,6 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -107,7 +93,19 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar1Rev = new System.Windows.Forms.Button();
+            this.btnCargarTribu2 = new System.Windows.Forms.Button();
+            this.btnElegirTribu1 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnCancelar2Rev = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.label33 = new System.Windows.Forms.Label();
@@ -158,7 +156,8 @@
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.btnCancelar3Rev = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.label55 = new System.Windows.Forms.Label();
@@ -209,7 +208,8 @@
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.btnCancelar4Rev = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.label77 = new System.Windows.Forms.Label();
@@ -265,16 +265,16 @@
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.tabPage11.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage12.SuspendLayout();
             this.tabPage13.SuspendLayout();
@@ -293,6 +293,7 @@
             this.General.SelectedIndex = 0;
             this.General.Size = new System.Drawing.Size(797, 594);
             this.General.TabIndex = 1;
+            this.General.MouseMove += new System.Windows.Forms.MouseEventHandler(this.General_MouseMove);
             // 
             // tabPage1
             // 
@@ -542,7 +543,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Silver;
-            this.tabPage2.Controls.Add(this.btnCancel2Rev);
+            this.tabPage2.Controls.Add(this.btnCancel1Rev);
             this.tabPage2.Controls.Add(this.tabControl1);
             this.tabPage2.Controls.Add(this.btnGuardar1Rev);
             this.tabPage2.Controls.Add(this.btnCargarTribu2);
@@ -562,21 +563,21 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Primera Revision";
             // 
-            // btnCancel2Rev
+            // btnCancel1Rev
             // 
-            this.btnCancel2Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancel2Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnCancel2Rev.FlatAppearance.BorderSize = 0;
-            this.btnCancel2Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel2Rev.ForeColor = System.Drawing.Color.White;
-            this.btnCancel2Rev.Location = new System.Drawing.Point(574, 525);
-            this.btnCancel2Rev.Name = "btnCancel2Rev";
-            this.btnCancel2Rev.Size = new System.Drawing.Size(100, 35);
-            this.btnCancel2Rev.TabIndex = 39;
-            this.btnCancel2Rev.Text = "Cancelar";
-            this.btnCancel2Rev.UseVisualStyleBackColor = false;
-            this.btnCancel2Rev.Click += new System.EventHandler(this.btnCancel2Rev_Click);
+            this.btnCancel1Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancel1Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCancel1Rev.FlatAppearance.BorderSize = 0;
+            this.btnCancel1Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel1Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1Rev.ForeColor = System.Drawing.Color.White;
+            this.btnCancel1Rev.Location = new System.Drawing.Point(574, 525);
+            this.btnCancel1Rev.Name = "btnCancel1Rev";
+            this.btnCancel1Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnCancel1Rev.TabIndex = 39;
+            this.btnCancel1Rev.Text = "Cancelar";
+            this.btnCancel1Rev.UseVisualStyleBackColor = false;
+            this.btnCancel1Rev.Click += new System.EventHandler(this.btnCancel2Rev_Click);
             // 
             // tabControl1
             // 
@@ -617,193 +618,27 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "       TRIBUNAL 1";
             // 
-            // btnGuardar1Rev
+            // label31
             // 
-            this.btnGuardar1Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGuardar1Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnGuardar1Rev.FlatAppearance.BorderSize = 0;
-            this.btnGuardar1Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar1Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar1Rev.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar1Rev.Location = new System.Drawing.Point(680, 525);
-            this.btnGuardar1Rev.Name = "btnGuardar1Rev";
-            this.btnGuardar1Rev.Size = new System.Drawing.Size(100, 35);
-            this.btnGuardar1Rev.TabIndex = 37;
-            this.btnGuardar1Rev.Text = "Guardar";
-            this.btnGuardar1Rev.UseVisualStyleBackColor = false;
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(443, 230);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(71, 18);
+            this.label31.TabIndex = 40;
+            this.label31.Text = "Estado :";
             // 
-            // btnCargarTribu2
+            // comboBox1
             // 
-            this.btnCargarTribu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnCargarTribu2.FlatAppearance.BorderSize = 0;
-            this.btnCargarTribu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnCargarTribu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarTribu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarTribu2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCargarTribu2.Location = new System.Drawing.Point(311, 77);
-            this.btnCargarTribu2.Name = "btnCargarTribu2";
-            this.btnCargarTribu2.Size = new System.Drawing.Size(88, 27);
-            this.btnCargarTribu2.TabIndex = 5;
-            this.btnCargarTribu2.Text = "Cargar";
-            this.btnCargarTribu2.UseVisualStyleBackColor = false;
-            // 
-            // btnElegirTribu1
-            // 
-            this.btnElegirTribu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnElegirTribu1.FlatAppearance.BorderSize = 0;
-            this.btnElegirTribu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnElegirTribu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnElegirTribu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnElegirTribu1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnElegirTribu1.Location = new System.Drawing.Point(311, 31);
-            this.btnElegirTribu1.Name = "btnElegirTribu1";
-            this.btnElegirTribu1.Size = new System.Drawing.Size(88, 27);
-            this.btnElegirTribu1.TabIndex = 5;
-            this.btnElegirTribu1.Text = "Cargar";
-            this.btnElegirTribu1.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(648, 66);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(113, 24);
-            this.dateTimePicker2.TabIndex = 2;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(648, 34);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(113, 24);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(99, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 24);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(477, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(153, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Empaste Tribunal 2";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 86);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(87, 18);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Tribunal 2:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(99, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 24);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(477, 35);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(153, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Empaste Tribunal 1";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 31);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 18);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Tribunal 1:";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.Silver;
-            this.tabPage5.Controls.Add(this.button1);
-            this.tabPage5.Controls.Add(this.tabControl2);
-            this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Controls.Add(this.button3);
-            this.tabPage5.Controls.Add(this.button4);
-            this.tabPage5.Controls.Add(this.dateTimePicker19);
-            this.tabPage5.Controls.Add(this.dateTimePicker20);
-            this.tabPage5.Controls.Add(this.textBox19);
-            this.tabPage5.Controls.Add(this.label51);
-            this.tabPage5.Controls.Add(this.label52);
-            this.tabPage5.Controls.Add(this.textBox20);
-            this.tabPage5.Controls.Add(this.label53);
-            this.tabPage5.Controls.Add(this.label54);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(789, 568);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Segunda Revision";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.BackColor = System.Drawing.Color.Silver;
-            this.tabPage8.Controls.Add(this.button5);
-            this.tabPage8.Controls.Add(this.tabControl3);
-            this.tabPage8.Controls.Add(this.button6);
-            this.tabPage8.Controls.Add(this.button7);
-            this.tabPage8.Controls.Add(this.button8);
-            this.tabPage8.Controls.Add(this.dateTimePicker29);
-            this.tabPage8.Controls.Add(this.dateTimePicker30);
-            this.tabPage8.Controls.Add(this.textBox29);
-            this.tabPage8.Controls.Add(this.label73);
-            this.tabPage8.Controls.Add(this.label74);
-            this.tabPage8.Controls.Add(this.textBox30);
-            this.tabPage8.Controls.Add(this.label75);
-            this.tabPage8.Controls.Add(this.label76);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(789, 568);
-            this.tabPage8.TabIndex = 3;
-            this.tabPage8.Text = "Tercera Revision";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.BackColor = System.Drawing.Color.Silver;
-            this.tabPage9.Controls.Add(this.button9);
-            this.tabPage9.Controls.Add(this.tabControl4);
-            this.tabPage9.Controls.Add(this.button10);
-            this.tabPage9.Controls.Add(this.button11);
-            this.tabPage9.Controls.Add(this.button12);
-            this.tabPage9.Controls.Add(this.dateTimePicker39);
-            this.tabPage9.Controls.Add(this.dateTimePicker40);
-            this.tabPage9.Controls.Add(this.textBox39);
-            this.tabPage9.Controls.Add(this.label95);
-            this.tabPage9.Controls.Add(this.label96);
-            this.tabPage9.Controls.Add(this.textBox40);
-            this.tabPage9.Controls.Add(this.label97);
-            this.tabPage9.Controls.Add(this.label98);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(789, 568);
-            this.tabPage9.TabIndex = 4;
-            this.tabPage9.Text = "Cuarta Revision";
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "APROBADO",
+            "REPROBADO"});
+            this.comboBox1.Location = new System.Drawing.Point(545, 226);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(206, 28);
+            this.comboBox1.TabIndex = 40;
             // 
             // textBox7
             // 
@@ -940,28 +775,6 @@
             this.label30.Size = new System.Drawing.Size(96, 18);
             this.label30.TabIndex = 42;
             this.label30.Text = "Comentario";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "APROBADO",
-            "REPROBADO"});
-            this.comboBox1.Location = new System.Drawing.Point(545, 226);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(206, 28);
-            this.comboBox1.TabIndex = 40;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(443, 230);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(71, 18);
-            this.label31.TabIndex = 40;
-            this.label31.Text = "Estado :";
             // 
             // tabPage4
             // 
@@ -1149,20 +962,162 @@
             this.label32.TabIndex = 60;
             this.label32.Text = "Comentario";
             // 
-            // button1
+            // btnGuardar1Rev
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(575, 525);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGuardar1Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardar1Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnGuardar1Rev.FlatAppearance.BorderSize = 0;
+            this.btnGuardar1Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar1Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar1Rev.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar1Rev.Location = new System.Drawing.Point(680, 525);
+            this.btnGuardar1Rev.Name = "btnGuardar1Rev";
+            this.btnGuardar1Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnGuardar1Rev.TabIndex = 37;
+            this.btnGuardar1Rev.Text = "Guardar";
+            this.btnGuardar1Rev.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarTribu2
+            // 
+            this.btnCargarTribu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCargarTribu2.FlatAppearance.BorderSize = 0;
+            this.btnCargarTribu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnCargarTribu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarTribu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarTribu2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCargarTribu2.Location = new System.Drawing.Point(311, 77);
+            this.btnCargarTribu2.Name = "btnCargarTribu2";
+            this.btnCargarTribu2.Size = new System.Drawing.Size(88, 27);
+            this.btnCargarTribu2.TabIndex = 5;
+            this.btnCargarTribu2.Text = "Cargar";
+            this.btnCargarTribu2.UseVisualStyleBackColor = false;
+            // 
+            // btnElegirTribu1
+            // 
+            this.btnElegirTribu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnElegirTribu1.FlatAppearance.BorderSize = 0;
+            this.btnElegirTribu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnElegirTribu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnElegirTribu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnElegirTribu1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnElegirTribu1.Location = new System.Drawing.Point(311, 31);
+            this.btnElegirTribu1.Name = "btnElegirTribu1";
+            this.btnElegirTribu1.Size = new System.Drawing.Size(88, 27);
+            this.btnElegirTribu1.TabIndex = 5;
+            this.btnElegirTribu1.Text = "Cargar";
+            this.btnElegirTribu1.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(648, 66);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(113, 24);
+            this.dateTimePicker2.TabIndex = 2;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(648, 34);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(113, 24);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(99, 83);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 24);
+            this.textBox2.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(477, 71);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(153, 18);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Empaste Tribunal 2";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 86);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 18);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Tribunal 2:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(99, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 24);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(477, 35);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(153, 18);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Empaste Tribunal 1";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 31);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(87, 18);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Tribunal 1:";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.Silver;
+            this.tabPage5.Controls.Add(this.btnCancelar2Rev);
+            this.tabPage5.Controls.Add(this.tabControl2);
+            this.tabPage5.Controls.Add(this.button2);
+            this.tabPage5.Controls.Add(this.button3);
+            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.dateTimePicker19);
+            this.tabPage5.Controls.Add(this.dateTimePicker20);
+            this.tabPage5.Controls.Add(this.textBox19);
+            this.tabPage5.Controls.Add(this.label51);
+            this.tabPage5.Controls.Add(this.label52);
+            this.tabPage5.Controls.Add(this.textBox20);
+            this.tabPage5.Controls.Add(this.label53);
+            this.tabPage5.Controls.Add(this.label54);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(789, 568);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Segunda Revision";
+            // 
+            // btnCancelar2Rev
+            // 
+            this.btnCancelar2Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelar2Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCancelar2Rev.FlatAppearance.BorderSize = 0;
+            this.btnCancelar2Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar2Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar2Rev.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar2Rev.Location = new System.Drawing.Point(575, 525);
+            this.btnCancelar2Rev.Name = "btnCancelar2Rev";
+            this.btnCancelar2Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnCancelar2Rev.TabIndex = 52;
+            this.btnCancelar2Rev.Text = "Cancelar";
+            this.btnCancelar2Rev.UseVisualStyleBackColor = false;
             // 
             // tabControl2
             // 
@@ -1666,20 +1621,44 @@
             this.label54.TabIndex = 43;
             this.label54.Text = "Tribunal 1:";
             // 
-            // button5
+            // tabPage8
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(575, 512);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 35);
-            this.button5.TabIndex = 65;
-            this.button5.Text = "Cancelar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.tabPage8.BackColor = System.Drawing.Color.Silver;
+            this.tabPage8.Controls.Add(this.btnCancelar3Rev);
+            this.tabPage8.Controls.Add(this.tabControl3);
+            this.tabPage8.Controls.Add(this.button6);
+            this.tabPage8.Controls.Add(this.button7);
+            this.tabPage8.Controls.Add(this.button8);
+            this.tabPage8.Controls.Add(this.dateTimePicker29);
+            this.tabPage8.Controls.Add(this.dateTimePicker30);
+            this.tabPage8.Controls.Add(this.textBox29);
+            this.tabPage8.Controls.Add(this.label73);
+            this.tabPage8.Controls.Add(this.label74);
+            this.tabPage8.Controls.Add(this.textBox30);
+            this.tabPage8.Controls.Add(this.label75);
+            this.tabPage8.Controls.Add(this.label76);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(789, 568);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "Tercera Revision";
+            // 
+            // btnCancelar3Rev
+            // 
+            this.btnCancelar3Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelar3Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCancelar3Rev.FlatAppearance.BorderSize = 0;
+            this.btnCancelar3Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar3Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar3Rev.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar3Rev.Location = new System.Drawing.Point(575, 512);
+            this.btnCancelar3Rev.Name = "btnCancelar3Rev";
+            this.btnCancelar3Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnCancelar3Rev.TabIndex = 65;
+            this.btnCancelar3Rev.Text = "Cancelar";
+            this.btnCancelar3Rev.UseVisualStyleBackColor = false;
+            this.btnCancelar3Rev.Click += new System.EventHandler(this.btnCancelarRevicion_Click);
             // 
             // tabControl3
             // 
@@ -2183,20 +2162,43 @@
             this.label76.TabIndex = 56;
             this.label76.Text = "Tribunal 1:";
             // 
-            // button9
+            // tabPage9
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(575, 512);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 35);
-            this.button9.TabIndex = 65;
-            this.button9.Text = "Cancelar";
-            this.button9.UseVisualStyleBackColor = false;
+            this.tabPage9.BackColor = System.Drawing.Color.Silver;
+            this.tabPage9.Controls.Add(this.btnCancelar4Rev);
+            this.tabPage9.Controls.Add(this.tabControl4);
+            this.tabPage9.Controls.Add(this.button10);
+            this.tabPage9.Controls.Add(this.button11);
+            this.tabPage9.Controls.Add(this.button12);
+            this.tabPage9.Controls.Add(this.dateTimePicker39);
+            this.tabPage9.Controls.Add(this.dateTimePicker40);
+            this.tabPage9.Controls.Add(this.textBox39);
+            this.tabPage9.Controls.Add(this.label95);
+            this.tabPage9.Controls.Add(this.label96);
+            this.tabPage9.Controls.Add(this.textBox40);
+            this.tabPage9.Controls.Add(this.label97);
+            this.tabPage9.Controls.Add(this.label98);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(789, 568);
+            this.tabPage9.TabIndex = 4;
+            this.tabPage9.Text = "Cuarta Revision";
+            // 
+            // btnCancelar4Rev
+            // 
+            this.btnCancelar4Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelar4Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCancelar4Rev.FlatAppearance.BorderSize = 0;
+            this.btnCancelar4Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar4Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar4Rev.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar4Rev.Location = new System.Drawing.Point(575, 512);
+            this.btnCancelar4Rev.Name = "btnCancelar4Rev";
+            this.btnCancelar4Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnCancelar4Rev.TabIndex = 65;
+            this.btnCancelar4Rev.Text = "Cancelar";
+            this.btnCancelar4Rev.UseVisualStyleBackColor = false;
             // 
             // tabControl4
             // 
@@ -2718,24 +2720,24 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
             this.tabControl3.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
             this.tabControl4.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
             this.tabPage12.PerformLayout();
@@ -2772,7 +2774,7 @@
         private System.Windows.Forms.TextBox txtAlumno;
         private System.Windows.Forms.TextBox txtRegistro;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button btnCancel2Rev;
+        private System.Windows.Forms.Button btnCancel1Rev;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnGuardar1Rev;
@@ -2826,7 +2828,7 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelar2Rev;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label33;
@@ -2877,7 +2879,7 @@
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCancelar3Rev;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Label label55;
@@ -2928,7 +2930,7 @@
         private System.Windows.Forms.TextBox textBox30;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnCancelar4Rev;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Label label77;

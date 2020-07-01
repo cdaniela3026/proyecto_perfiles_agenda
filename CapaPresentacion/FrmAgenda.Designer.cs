@@ -78,7 +78,7 @@
             this.btnBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarAgenda.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBuscarAgenda.Location = new System.Drawing.Point(728, 10);
-            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarAgenda.Name = "btnBuscarAgenda";
             this.btnBuscarAgenda.Size = new System.Drawing.Size(72, 27);
             this.btnBuscarAgenda.TabIndex = 25;
@@ -91,7 +91,7 @@
             this.txtBuscarAgenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarAgenda.Location = new System.Drawing.Point(566, 11);
-            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarAgenda.Name = "txtBuscarAgenda";
             this.txtBuscarAgenda.Size = new System.Drawing.Size(155, 23);
             this.txtBuscarAgenda.TabIndex = 24;
@@ -183,7 +183,7 @@
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.Visible = false;
-            this.idDataGridViewTextBoxColumn.Width = 42;
+            this.idDataGridViewTextBoxColumn.Width = 44;
             // 
             // fechaDefensaDataGridViewTextBoxColumn
             // 
@@ -278,8 +278,8 @@
             this.ClientSize = new System.Drawing.Size(856, 537);
             this.Controls.Add(this.pnlDataGrid);
             this.Controls.Add(this.pnlBuscar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
             this.pnlBuscar.ResumeLayout(false);

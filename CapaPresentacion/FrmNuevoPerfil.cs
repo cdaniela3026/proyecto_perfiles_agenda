@@ -75,9 +75,13 @@ namespace CapaPresentacion
             //cmbCarrera.ValueMember = "id";
         }
 
+
+
         #endregion
 
-
-
+        private void btnCancelarNuevop_Click_1(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

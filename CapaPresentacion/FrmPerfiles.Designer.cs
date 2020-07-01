@@ -236,6 +236,7 @@
             this.ClientSize = new System.Drawing.Size(875, 537);
             this.Controls.Add(this.dtgPerfilesTesis);
             this.Controls.Add(this.pnlBuscar2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPerfiles";
             this.Text = "FrmPerfiles";

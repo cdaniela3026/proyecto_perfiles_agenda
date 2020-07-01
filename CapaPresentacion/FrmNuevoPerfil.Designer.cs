@@ -111,6 +111,7 @@
             this.btnCancelarNuevop.TabIndex = 39;
             this.btnCancelarNuevop.Text = "Cancelar";
             this.btnCancelarNuevop.UseVisualStyleBackColor = false;
+            this.btnCancelarNuevop.Click += new System.EventHandler(this.btnCancelarNuevop_Click_1);
             // 
             // btnGuardarNuevoP
             // 

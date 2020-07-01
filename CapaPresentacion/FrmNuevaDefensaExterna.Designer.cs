@@ -39,13 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dtFechaDefensa = new System.Windows.Forms.DateTimePicker();
             this.dtHora = new System.Windows.Forms.DateTimePicker();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.pnlBarraTitulo = new System.Windows.Forms.Panel();
-            this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.pnlBarraTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,13 +56,11 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.dtFechaDefensa);
             this.panel1.Controls.Add(this.dtHora);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pnlBarraTitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 609);
+            this.panel1.Size = new System.Drawing.Size(604, 431);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -79,7 +71,7 @@
             this.btnCancelarNuevaD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarNuevaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarNuevaD.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarNuevaD.Location = new System.Drawing.Point(322, 504);
+            this.btnCancelarNuevaD.Location = new System.Drawing.Point(271, 302);
             this.btnCancelarNuevaD.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarNuevaD.Name = "btnCancelarNuevaD";
             this.btnCancelarNuevaD.Size = new System.Drawing.Size(82, 38);
@@ -95,7 +87,7 @@
             this.btnGuardarNuevoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarNuevoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNuevoP.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarNuevoP.Location = new System.Drawing.Point(410, 504);
+            this.btnGuardarNuevoP.Location = new System.Drawing.Point(359, 302);
             this.btnGuardarNuevoP.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarNuevoP.Name = "btnGuardarNuevoP";
             this.btnGuardarNuevoP.Size = new System.Drawing.Size(82, 38);
@@ -133,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(104, 401);
+            this.label2.Location = new System.Drawing.Point(53, 199);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 18);
@@ -142,7 +134,7 @@
             // 
             // txtAula
             // 
-            this.txtAula.Location = new System.Drawing.Point(106, 431);
+            this.txtAula.Location = new System.Drawing.Point(55, 229);
             this.txtAula.Margin = new System.Windows.Forms.Padding(2);
             this.txtAula.Name = "txtAula";
             this.txtAula.Size = new System.Drawing.Size(76, 20);
@@ -152,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, 404);
+            this.label1.Location = new System.Drawing.Point(175, 202);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 18);
@@ -163,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(367, 404);
+            this.label3.Location = new System.Drawing.Point(316, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 18);
@@ -174,7 +166,7 @@
             // 
             this.dtFechaDefensa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtFechaDefensa.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaDefensa.Location = new System.Drawing.Point(229, 426);
+            this.dtFechaDefensa.Location = new System.Drawing.Point(178, 224);
             this.dtFechaDefensa.Margin = new System.Windows.Forms.Padding(2);
             this.dtFechaDefensa.Name = "dtFechaDefensa";
             this.dtFechaDefensa.Size = new System.Drawing.Size(108, 24);
@@ -184,73 +176,18 @@
             // 
             this.dtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtHora.Location = new System.Drawing.Point(370, 426);
+            this.dtHora.Location = new System.Drawing.Point(319, 224);
             this.dtHora.Margin = new System.Windows.Forms.Padding(2);
             this.dtHora.Name = "dtHora";
             this.dtHora.Size = new System.Drawing.Size(108, 24);
             this.dtHora.TabIndex = 18;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.lblTitulo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 27);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 60);
-            this.panel2.TabIndex = 17;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(44, 17);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(178, 29);
-            this.lblTitulo.TabIndex = 24;
-            this.lblTitulo.Text = "Nueva Defensa Externa";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlBarraTitulo
-            // 
-            this.pnlBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.pnlBarraTitulo.Controls.Add(this.btnCerrar);
-            this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlBarraTitulo.Name = "pnlBarraTitulo";
-            this.pnlBarraTitulo.Size = new System.Drawing.Size(598, 27);
-            this.pnlBarraTitulo.TabIndex = 1;
-            this.pnlBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBarraTitulo_MouseMove);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnCerrar.IconColor = System.Drawing.Color.Black;
-            this.btnCerrar.IconSize = 16;
-            this.btnCerrar.Location = new System.Drawing.Point(564, 1);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(34, 29);
-            this.btnCerrar.TabIndex = 1;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmNuevaDefensaExterna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(600, 609);
+            this.ClientSize = new System.Drawing.Size(604, 431);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -258,8 +195,6 @@
             this.Text = "FrmNuevaDefensaExterna";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.pnlBarraTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -267,10 +202,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlBarraTitulo;
-        private FontAwesome.Sharp.IconButton btnCerrar;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.DateTimePicker dtFechaDefensa;
         private System.Windows.Forms.DateTimePicker dtHora;
         private System.Windows.Forms.Label label4;

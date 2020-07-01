@@ -54,5 +54,10 @@ namespace CapaPresentacion
             FrmRevisiones frm = new FrmRevisiones();
             frm.Show();
         }
+
+        private void dtgPerfilesTesis_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

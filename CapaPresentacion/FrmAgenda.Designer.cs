@@ -38,6 +38,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.pnlDataGrid = new System.Windows.Forms.Panel();
             this.dtgDefensaExterna = new System.Windows.Forms.DataGridView();
+            this.viewDefensasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDefensaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +50,6 @@
             this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carreraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.facultadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.viewDefensasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlBuscar.SuspendLayout();
             this.pnlDataGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDefensaExterna)).BeginInit();
@@ -78,7 +78,7 @@
             this.btnBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarAgenda.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBuscarAgenda.Location = new System.Drawing.Point(728, 10);
-            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarAgenda.Name = "btnBuscarAgenda";
             this.btnBuscarAgenda.Size = new System.Drawing.Size(72, 27);
             this.btnBuscarAgenda.TabIndex = 25;
@@ -91,7 +91,7 @@
             this.txtBuscarAgenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarAgenda.Location = new System.Drawing.Point(566, 11);
-            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarAgenda.Name = "txtBuscarAgenda";
             this.txtBuscarAgenda.Size = new System.Drawing.Size(155, 23);
             this.txtBuscarAgenda.TabIndex = 24;
@@ -121,6 +121,7 @@
             // 
             // dtgDefensaExterna
             // 
+            this.dtgDefensaExterna.AllowUserToAddRows = false;
             this.dtgDefensaExterna.AutoGenerateColumns = false;
             this.dtgDefensaExterna.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgDefensaExterna.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -136,7 +137,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgDefensaExterna.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgDefensaExterna.ColumnHeadersHeight = 28;
+            this.dtgDefensaExterna.ColumnHeadersHeight = 34;
             this.dtgDefensaExterna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgDefensaExterna.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -156,12 +157,13 @@
             this.dtgDefensaExterna.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dtgDefensaExterna.Location = new System.Drawing.Point(0, 0);
             this.dtgDefensaExterna.Name = "dtgDefensaExterna";
+            this.dtgDefensaExterna.ReadOnly = true;
             this.dtgDefensaExterna.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgDefensaExterna.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -176,98 +178,97 @@
             this.dtgDefensaExterna.Size = new System.Drawing.Size(856, 491);
             this.dtgDefensaExterna.TabIndex = 0;
             // 
+            // viewDefensasBindingSource
+            // 
+            this.viewDefensasBindingSource.DataSource = typeof(CapaNegocio.Views.ViewDefensas);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Visible = false;
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.Width = 42;
             // 
             // fechaDefensaDataGridViewTextBoxColumn
             // 
             this.fechaDefensaDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Defensa";
             this.fechaDefensaDataGridViewTextBoxColumn.HeaderText = "Fecha_Defensa";
-            this.fechaDefensaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fechaDefensaDataGridViewTextBoxColumn.Name = "fechaDefensaDataGridViewTextBoxColumn";
+            this.fechaDefensaDataGridViewTextBoxColumn.ReadOnly = true;
             this.fechaDefensaDataGridViewTextBoxColumn.Width = 130;
             // 
             // horaDataGridViewTextBoxColumn
             // 
             this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
             this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
-            this.horaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
             this.horaDataGridViewTextBoxColumn.Width = 62;
             // 
             // aulaDataGridViewTextBoxColumn
             // 
             this.aulaDataGridViewTextBoxColumn.DataPropertyName = "Aula";
             this.aulaDataGridViewTextBoxColumn.HeaderText = "Aula";
-            this.aulaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.aulaDataGridViewTextBoxColumn.Name = "aulaDataGridViewTextBoxColumn";
+            this.aulaDataGridViewTextBoxColumn.ReadOnly = true;
             this.aulaDataGridViewTextBoxColumn.Width = 59;
             // 
             // tipoDataGridViewTextBoxColumn
             // 
             this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
             this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
-            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
             this.tipoDataGridViewTextBoxColumn.Width = 58;
             // 
             // temaDataGridViewTextBoxColumn
             // 
             this.temaDataGridViewTextBoxColumn.DataPropertyName = "Tema";
             this.temaDataGridViewTextBoxColumn.HeaderText = "Tema";
-            this.temaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.temaDataGridViewTextBoxColumn.Name = "temaDataGridViewTextBoxColumn";
+            this.temaDataGridViewTextBoxColumn.ReadOnly = true;
             this.temaDataGridViewTextBoxColumn.Width = 66;
             // 
             // registroDataGridViewTextBoxColumn
             // 
             this.registroDataGridViewTextBoxColumn.DataPropertyName = "Registro";
             this.registroDataGridViewTextBoxColumn.HeaderText = "Registro";
-            this.registroDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.registroDataGridViewTextBoxColumn.Name = "registroDataGridViewTextBoxColumn";
+            this.registroDataGridViewTextBoxColumn.ReadOnly = true;
             this.registroDataGridViewTextBoxColumn.Width = 85;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
             this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             this.nombreDataGridViewTextBoxColumn.Width = 82;
             // 
             // apellidoDataGridViewTextBoxColumn
             // 
             this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
             this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
+            this.apellidoDataGridViewTextBoxColumn.ReadOnly = true;
             this.apellidoDataGridViewTextBoxColumn.Width = 83;
             // 
             // carreraDataGridViewTextBoxColumn
             // 
             this.carreraDataGridViewTextBoxColumn.DataPropertyName = "Carrera";
             this.carreraDataGridViewTextBoxColumn.HeaderText = "Carrera";
-            this.carreraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.carreraDataGridViewTextBoxColumn.Name = "carreraDataGridViewTextBoxColumn";
+            this.carreraDataGridViewTextBoxColumn.ReadOnly = true;
             this.carreraDataGridViewTextBoxColumn.Width = 82;
             // 
             // facultadDataGridViewTextBoxColumn
             // 
             this.facultadDataGridViewTextBoxColumn.DataPropertyName = "Facultad";
             this.facultadDataGridViewTextBoxColumn.HeaderText = "Facultad";
-            this.facultadDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.facultadDataGridViewTextBoxColumn.Name = "facultadDataGridViewTextBoxColumn";
+            this.facultadDataGridViewTextBoxColumn.ReadOnly = true;
             this.facultadDataGridViewTextBoxColumn.Width = 87;
-            // 
-            // viewDefensasBindingSource
-            // 
-            this.viewDefensasBindingSource.DataSource = typeof(CapaNegocio.Views.ViewDefensas);
             // 
             // FrmAgenda
             // 
@@ -279,7 +280,7 @@
             this.Controls.Add(this.pnlDataGrid);
             this.Controls.Add(this.pnlBuscar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
             this.pnlBuscar.ResumeLayout(false);
@@ -298,6 +299,7 @@
         private System.Windows.Forms.Panel pnlDataGrid;
         private System.Windows.Forms.DataGridView dtgDefensaExterna;
         private System.Windows.Forms.Button btnBuscarAgenda;
+        private System.Windows.Forms.BindingSource viewDefensasBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDefensaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
@@ -309,6 +311,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn carreraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn facultadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource viewDefensasBindingSource;
     }
 }

@@ -124,6 +124,7 @@
             // 
             // dtgPerfilesTesis
             // 
+            this.dtgPerfilesTesis.AllowUserToAddRows = false;
             this.dtgPerfilesTesis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtgPerfilesTesis.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgPerfilesTesis.BackgroundColor = System.Drawing.SystemColors.ControlDark;
@@ -155,6 +156,7 @@
             this.dtgPerfilesTesis.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dtgPerfilesTesis.Location = new System.Drawing.Point(0, 46);
             this.dtgPerfilesTesis.Name = "dtgPerfilesTesis";
+            this.dtgPerfilesTesis.ReadOnly = true;
             this.dtgPerfilesTesis.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -174,59 +176,69 @@
             this.dtgPerfilesTesis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgPerfilesTesis.Size = new System.Drawing.Size(875, 491);
             this.dtgPerfilesTesis.TabIndex = 3;
+            this.dtgPerfilesTesis.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgPerfilesTesis_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Registro";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 90;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Alumno";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 82;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Email";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Width = 70;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Celular";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             this.Column4.Width = 80;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Carrera";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Width = 83;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Tema Tesis";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             this.Column6.Width = 104;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Tutor";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Width = 67;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Fecha Recepcion";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             this.Column8.Width = 139;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Observacion";
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             this.Column9.Width = 119;
             // 
             // FrmPerfiles

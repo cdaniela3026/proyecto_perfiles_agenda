@@ -84,7 +84,6 @@ CREATE TABLE IF NOT EXISTS "revision" (
     "id" INTEGER PRIMARY KEY,
     -- campo agregado
     "estado" TEXT COMMENT 'Aprobado o Reprobado',
-    -- campo agregado
     "fecha_entrega_alumno" TEXT COMMENT 'fecha alumno entrega su tesis',
     "fecha_entrega_tribunal" TEXT COMMENT 'fecha se entrega el trabajo a los tribunales',
     "fecha_limite_devolucion" TEXT COMMENT 'fecha limite para que el tribunal devuelva el trabajo revisado',
@@ -114,7 +113,9 @@ CREATE TABLE IF NOT EXISTS "detalle_revision" (
 CREATE TABLE IF NOT EXISTS "tipo_titulacion_otros"(
     "id" INTEGER PRIMARY KEY,
     "tipo" TEXT COMMENT 'examen de grado, graduación por excelencia',
-    "descripcion" TEXT
+    "descripcion" TEXT,
+    "creado_en" TEXT DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "modificado_en" TEXT DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 CREATE TABLE IF NOT EXISTS "titulacion_otros" (
     "id" INTEGER PRIMARY KEY,

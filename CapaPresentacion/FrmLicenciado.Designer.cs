@@ -50,8 +50,9 @@
             this.pnlBodyLicenciado.Controls.Add(this.pnlbarralicenciado);
             this.pnlBodyLicenciado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBodyLicenciado.Location = new System.Drawing.Point(0, 0);
+            this.pnlBodyLicenciado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBodyLicenciado.Name = "pnlBodyLicenciado";
-            this.pnlBodyLicenciado.Size = new System.Drawing.Size(850, 600);
+            this.pnlBodyLicenciado.Size = new System.Drawing.Size(638, 488);
             this.pnlBodyLicenciado.TabIndex = 0;
             // 
             // dtgLicenciados
@@ -59,11 +60,12 @@
             this.dtgLicenciados.BackgroundColor = System.Drawing.Color.Silver;
             this.dtgLicenciados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgLicenciados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgLicenciados.Location = new System.Drawing.Point(0, 107);
+            this.dtgLicenciados.Location = new System.Drawing.Point(0, 87);
+            this.dtgLicenciados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgLicenciados.Name = "dtgLicenciados";
             this.dtgLicenciados.RowHeadersWidth = 51;
             this.dtgLicenciados.RowTemplate.Height = 24;
-            this.dtgLicenciados.Size = new System.Drawing.Size(850, 493);
+            this.dtgLicenciados.Size = new System.Drawing.Size(638, 401);
             this.dtgLicenciados.TabIndex = 17;
             this.dtgLicenciados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLicenciados_CellContentClick);
             // 
@@ -74,10 +76,10 @@
             this.panel2.Controls.Add(this.btnAgregarLicenciado);
             this.panel2.Controls.Add(this.lblTitulo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 33);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 27);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(850, 74);
+            this.panel2.Size = new System.Drawing.Size(638, 60);
             this.panel2.TabIndex = 16;
             // 
             // btnSeleccionarLicenciado
@@ -87,10 +89,10 @@
             this.btnSeleccionarLicenciado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeleccionarLicenciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeleccionarLicenciado.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionarLicenciado.Location = new System.Drawing.Point(462, 21);
-            this.btnSeleccionarLicenciado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSeleccionarLicenciado.Location = new System.Drawing.Point(343, 17);
+            this.btnSeleccionarLicenciado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSeleccionarLicenciado.Name = "btnSeleccionarLicenciado";
-            this.btnSeleccionarLicenciado.Size = new System.Drawing.Size(129, 36);
+            this.btnSeleccionarLicenciado.Size = new System.Drawing.Size(100, 29);
             this.btnSeleccionarLicenciado.TabIndex = 26;
             this.btnSeleccionarLicenciado.Text = "Seleccionar";
             this.btnSeleccionarLicenciado.UseVisualStyleBackColor = false;
@@ -102,10 +104,10 @@
             this.btnAgregarLicenciado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarLicenciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarLicenciado.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarLicenciado.Location = new System.Drawing.Point(625, 21);
-            this.btnAgregarLicenciado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarLicenciado.Location = new System.Drawing.Point(469, 17);
+            this.btnAgregarLicenciado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarLicenciado.Name = "btnAgregarLicenciado";
-            this.btnAgregarLicenciado.Size = new System.Drawing.Size(118, 36);
+            this.btnAgregarLicenciado.Size = new System.Drawing.Size(88, 29);
             this.btnAgregarLicenciado.TabIndex = 25;
             this.btnAgregarLicenciado.Text = "Agregar";
             this.btnAgregarLicenciado.UseVisualStyleBackColor = false;
@@ -116,9 +118,10 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(19, 21);
+            this.lblTitulo.Location = new System.Drawing.Point(14, 17);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(238, 36);
+            this.lblTitulo.Size = new System.Drawing.Size(178, 29);
             this.lblTitulo.TabIndex = 24;
             this.lblTitulo.Text = "Licenciados";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,9 +133,9 @@
             this.pnlbarralicenciado.Controls.Add(this.btnCerrar);
             this.pnlbarralicenciado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlbarralicenciado.Location = new System.Drawing.Point(0, 0);
-            this.pnlbarralicenciado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlbarralicenciado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlbarralicenciado.Name = "pnlbarralicenciado";
-            this.pnlbarralicenciado.Size = new System.Drawing.Size(850, 33);
+            this.pnlbarralicenciado.Size = new System.Drawing.Size(638, 27);
             this.pnlbarralicenciado.TabIndex = 1;
             this.pnlbarralicenciado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlbarralicenciado_MouseDown);
             // 
@@ -146,23 +149,24 @@
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnCerrar.IconColor = System.Drawing.Color.Black;
             this.btnCerrar.IconSize = 16;
-            this.btnCerrar.Location = new System.Drawing.Point(804, 1);
+            this.btnCerrar.Location = new System.Drawing.Point(603, 1);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(45, 36);
+            this.btnCerrar.Size = new System.Drawing.Size(34, 29);
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmLicenciado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(850, 600);
+            this.ClientSize = new System.Drawing.Size(638, 488);
             this.Controls.Add(this.pnlBodyLicenciado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLicenciado";
             this.Text = "FrmLicenciado";
             this.pnlBodyLicenciado.ResumeLayout(false);

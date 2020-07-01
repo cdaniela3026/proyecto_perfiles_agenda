@@ -66,7 +66,7 @@
             this.pnlBuscar.Location = new System.Drawing.Point(0, 0);
             this.pnlBuscar.Margin = new System.Windows.Forms.Padding(0);
             this.pnlBuscar.Name = "pnlBuscar";
-            this.pnlBuscar.Size = new System.Drawing.Size(888, 46);
+            this.pnlBuscar.Size = new System.Drawing.Size(856, 46);
             this.pnlBuscar.TabIndex = 1;
             // 
             // btnBuscarAgenda
@@ -90,7 +90,7 @@
             this.txtBuscarAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBuscarAgenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarAgenda.Location = new System.Drawing.Point(598, 11);
+            this.txtBuscarAgenda.Location = new System.Drawing.Point(566, 11);
             this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarAgenda.Name = "txtBuscarAgenda";
             this.txtBuscarAgenda.Size = new System.Drawing.Size(155, 23);
@@ -102,7 +102,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(446, 14);
+            this.label14.Location = new System.Drawing.Point(414, 14);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(152, 18);
@@ -116,12 +116,11 @@
             this.pnlDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDataGrid.Location = new System.Drawing.Point(0, 46);
             this.pnlDataGrid.Name = "pnlDataGrid";
-            this.pnlDataGrid.Size = new System.Drawing.Size(888, 491);
+            this.pnlDataGrid.Size = new System.Drawing.Size(856, 491);
             this.pnlDataGrid.TabIndex = 2;
             // 
             // dtgDefensaExterna
             // 
-            this.dtgDefensaExterna.AllowUserToAddRows = false;
             this.dtgDefensaExterna.AutoGenerateColumns = false;
             this.dtgDefensaExterna.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDefensaExterna.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -175,20 +174,23 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dtgDefensaExterna.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgDefensaExterna.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDefensaExterna.Size = new System.Drawing.Size(888, 491);
+            this.dtgDefensaExterna.Size = new System.Drawing.Size(856, 491);
             this.dtgDefensaExterna.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Visible = false;
             // 
             // fechaDefensaDataGridViewTextBoxColumn
             // 
             this.fechaDefensaDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Defensa";
             this.fechaDefensaDataGridViewTextBoxColumn.HeaderText = "Fecha_Defensa";
+            this.fechaDefensaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fechaDefensaDataGridViewTextBoxColumn.Name = "fechaDefensaDataGridViewTextBoxColumn";
             this.fechaDefensaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -196,6 +198,7 @@
             // 
             this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
             this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
+            this.horaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
             this.horaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -203,6 +206,7 @@
             // 
             this.aulaDataGridViewTextBoxColumn.DataPropertyName = "Aula";
             this.aulaDataGridViewTextBoxColumn.HeaderText = "Aula";
+            this.aulaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.aulaDataGridViewTextBoxColumn.Name = "aulaDataGridViewTextBoxColumn";
             this.aulaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -210,6 +214,7 @@
             // 
             this.tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
             this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
             this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -217,6 +222,7 @@
             // 
             this.temaDataGridViewTextBoxColumn.DataPropertyName = "Tema";
             this.temaDataGridViewTextBoxColumn.HeaderText = "Tema";
+            this.temaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.temaDataGridViewTextBoxColumn.Name = "temaDataGridViewTextBoxColumn";
             this.temaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -224,6 +230,7 @@
             // 
             this.registroDataGridViewTextBoxColumn.DataPropertyName = "Registro";
             this.registroDataGridViewTextBoxColumn.HeaderText = "Registro";
+            this.registroDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.registroDataGridViewTextBoxColumn.Name = "registroDataGridViewTextBoxColumn";
             this.registroDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -231,6 +238,7 @@
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
             this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -238,6 +246,7 @@
             // 
             this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
             this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
+            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
             this.apellidoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -245,6 +254,7 @@
             // 
             this.carreraDataGridViewTextBoxColumn.DataPropertyName = "Carrera";
             this.carreraDataGridViewTextBoxColumn.HeaderText = "Carrera";
+            this.carreraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.carreraDataGridViewTextBoxColumn.Name = "carreraDataGridViewTextBoxColumn";
             this.carreraDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -252,6 +262,7 @@
             // 
             this.facultadDataGridViewTextBoxColumn.DataPropertyName = "Facultad";
             this.facultadDataGridViewTextBoxColumn.HeaderText = "Facultad";
+            this.facultadDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.facultadDataGridViewTextBoxColumn.Name = "facultadDataGridViewTextBoxColumn";
             this.facultadDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -265,10 +276,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(888, 537);
+            this.ClientSize = new System.Drawing.Size(856, 537);
             this.Controls.Add(this.pnlDataGrid);
             this.Controls.Add(this.pnlBuscar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
@@ -288,7 +299,6 @@
         private System.Windows.Forms.Panel pnlDataGrid;
         private System.Windows.Forms.DataGridView dtgDefensaExterna;
         private System.Windows.Forms.Button btnBuscarAgenda;
-        private System.Windows.Forms.BindingSource viewDefensasBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDefensaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
@@ -300,5 +310,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn carreraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn facultadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource viewDefensasBindingSource;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancelarNuevop = new System.Windows.Forms.Button();
+            this.btnCancelarNuevaD = new System.Windows.Forms.Button();
             this.btnGuardarNuevoP = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
@@ -52,7 +52,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnCancelarNuevop);
+            this.panel1.Controls.Add(this.btnCancelarNuevaD);
             this.panel1.Controls.Add(this.btnGuardarNuevoP);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cmbTipo);
@@ -66,26 +66,27 @@
             this.panel1.Controls.Add(this.pnlBarraTitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 609);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnCancelarNuevop
+            // btnCancelarNuevaD
             // 
-            this.btnCancelarNuevop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.btnCancelarNuevop.FlatAppearance.BorderSize = 0;
-            this.btnCancelarNuevop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarNuevop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarNuevop.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarNuevop.Location = new System.Drawing.Point(322, 504);
-            this.btnCancelarNuevop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCancelarNuevop.Name = "btnCancelarNuevop";
-            this.btnCancelarNuevop.Size = new System.Drawing.Size(82, 38);
-            this.btnCancelarNuevop.TabIndex = 35;
-            this.btnCancelarNuevop.Text = "Cancelar";
-            this.btnCancelarNuevop.UseVisualStyleBackColor = false;
+            this.btnCancelarNuevaD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnCancelarNuevaD.FlatAppearance.BorderSize = 0;
+            this.btnCancelarNuevaD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarNuevaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarNuevaD.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarNuevaD.Location = new System.Drawing.Point(322, 504);
+            this.btnCancelarNuevaD.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarNuevaD.Name = "btnCancelarNuevaD";
+            this.btnCancelarNuevaD.Size = new System.Drawing.Size(82, 38);
+            this.btnCancelarNuevaD.TabIndex = 35;
+            this.btnCancelarNuevaD.Text = "Cancelar";
+            this.btnCancelarNuevaD.UseVisualStyleBackColor = false;
+            this.btnCancelarNuevaD.Click += new System.EventHandler(this.btnCancelarNuevaD_Click);
             // 
             // btnGuardarNuevoP
             // 
@@ -95,7 +96,7 @@
             this.btnGuardarNuevoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNuevoP.ForeColor = System.Drawing.Color.White;
             this.btnGuardarNuevoP.Location = new System.Drawing.Point(410, 504);
-            this.btnGuardarNuevoP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardarNuevoP.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarNuevoP.Name = "btnGuardarNuevoP";
             this.btnGuardarNuevoP.Size = new System.Drawing.Size(82, 38);
             this.btnGuardarNuevoP.TabIndex = 34;
@@ -122,7 +123,7 @@
             "examen de grado",
             "proyecto de grado"});
             this.cmbTipo.Location = new System.Drawing.Point(56, 135);
-            this.cmbTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(92, 21);
             this.cmbTipo.TabIndex = 32;
@@ -142,7 +143,7 @@
             // txtAula
             // 
             this.txtAula.Location = new System.Drawing.Point(106, 431);
-            this.txtAula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAula.Margin = new System.Windows.Forms.Padding(2);
             this.txtAula.Name = "txtAula";
             this.txtAula.Size = new System.Drawing.Size(76, 20);
             this.txtAula.TabIndex = 30;
@@ -174,7 +175,7 @@
             this.dtFechaDefensa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtFechaDefensa.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFechaDefensa.Location = new System.Drawing.Point(229, 426);
-            this.dtFechaDefensa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtFechaDefensa.Margin = new System.Windows.Forms.Padding(2);
             this.dtFechaDefensa.Name = "dtFechaDefensa";
             this.dtFechaDefensa.Size = new System.Drawing.Size(108, 24);
             this.dtFechaDefensa.TabIndex = 19;
@@ -184,7 +185,7 @@
             this.dtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtHora.Location = new System.Drawing.Point(370, 426);
-            this.dtHora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtHora.Margin = new System.Windows.Forms.Padding(2);
             this.dtHora.Name = "dtHora";
             this.dtHora.Size = new System.Drawing.Size(108, 24);
             this.dtHora.TabIndex = 18;
@@ -195,7 +196,7 @@
             this.panel2.Controls.Add(this.lblTitulo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 27);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(598, 60);
             this.panel2.TabIndex = 17;
@@ -219,10 +220,11 @@
             this.pnlBarraTitulo.Controls.Add(this.btnCerrar);
             this.pnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
             this.pnlBarraTitulo.Size = new System.Drawing.Size(598, 27);
             this.pnlBarraTitulo.TabIndex = 1;
+            this.pnlBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBarraTitulo_MouseMove);
             // 
             // btnCerrar
             // 
@@ -251,7 +253,7 @@
             this.ClientSize = new System.Drawing.Size(600, 609);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmNuevaDefensaExterna";
             this.Text = "FrmNuevaDefensaExterna";
             this.panel1.ResumeLayout(false);
@@ -277,7 +279,7 @@
         private System.Windows.Forms.TextBox txtAula;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnCancelarNuevop;
+        private System.Windows.Forms.Button btnCancelarNuevaD;
         private System.Windows.Forms.Button btnGuardarNuevoP;
     }
 }

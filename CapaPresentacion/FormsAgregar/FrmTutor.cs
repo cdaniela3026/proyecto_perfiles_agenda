@@ -39,15 +39,16 @@ namespace CapaPresentacion
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+           
             FrmCarrera frm = new FrmCarrera();
-            frm.Show();
+            frm.ShowDialog();
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             FrmInstitucion frm1 = new FrmInstitucion();
-            frm1.Show();
+            frm1.ShowDialog();
         }
     }
 }

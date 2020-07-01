@@ -48,6 +48,7 @@
             this.pnlBarraTitulo.Name = "pnlBarraTitulo";
             this.pnlBarraTitulo.Size = new System.Drawing.Size(349, 27);
             this.pnlBarraTitulo.TabIndex = 29;
+            this.pnlBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBarraTitulo_MouseMove);
             // 
             // label10
             // 

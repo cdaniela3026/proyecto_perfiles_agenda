@@ -83,5 +83,10 @@ namespace CapaPresentacion
         {
             
         }
+
+        private void grbAlumno_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

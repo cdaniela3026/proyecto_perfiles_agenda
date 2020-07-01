@@ -75,6 +75,7 @@
             // 
             // grbPerfilTesis
             // 
+            this.grbPerfilTesis.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grbPerfilTesis.BackColor = System.Drawing.Color.LightGray;
             this.grbPerfilTesis.Controls.Add(this.btnCancelarNuevop);
             this.grbPerfilTesis.Controls.Add(this.btnGuardarNuevoP);
@@ -87,11 +88,10 @@
             this.grbPerfilTesis.Controls.Add(this.label2);
             this.grbPerfilTesis.Controls.Add(this.label3);
             this.grbPerfilTesis.Controls.Add(this.label6);
-            this.grbPerfilTesis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbPerfilTesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPerfilTesis.Location = new System.Drawing.Point(0, 195);
             this.grbPerfilTesis.Name = "grbPerfilTesis";
-            this.grbPerfilTesis.Size = new System.Drawing.Size(884, 301);
+            this.grbPerfilTesis.Size = new System.Drawing.Size(884, 268);
             this.grbPerfilTesis.TabIndex = 36;
             this.grbPerfilTesis.TabStop = false;
             this.grbPerfilTesis.Text = "PERFIL TESIS";
@@ -105,7 +105,7 @@
             this.btnCancelarNuevop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarNuevop.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarNuevop.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarNuevop.Location = new System.Drawing.Point(594, 216);
+            this.btnCancelarNuevop.Location = new System.Drawing.Point(594, 200);
             this.btnCancelarNuevop.Name = "btnCancelarNuevop";
             this.btnCancelarNuevop.Size = new System.Drawing.Size(100, 35);
             this.btnCancelarNuevop.TabIndex = 39;
@@ -121,7 +121,7 @@
             this.btnGuardarNuevoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarNuevoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNuevoP.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarNuevoP.Location = new System.Drawing.Point(706, 216);
+            this.btnGuardarNuevoP.Location = new System.Drawing.Point(706, 200);
             this.btnGuardarNuevoP.Name = "btnGuardarNuevoP";
             this.btnGuardarNuevoP.Size = new System.Drawing.Size(100, 35);
             this.btnGuardarNuevoP.TabIndex = 38;
@@ -221,6 +221,7 @@
             // 
             // grbAlumno
             // 
+            this.grbAlumno.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grbAlumno.BackColor = System.Drawing.Color.LightGray;
             this.grbAlumno.Controls.Add(this.cmbCarrera);
             this.grbAlumno.Controls.Add(this.label7);
@@ -236,16 +237,16 @@
             this.grbAlumno.Controls.Add(this.label12);
             this.grbAlumno.Controls.Add(this.txtRegistroAlum);
             this.grbAlumno.Controls.Add(this.label13);
-            this.grbAlumno.Dock = System.Windows.Forms.DockStyle.Top;
             this.grbAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbAlumno.Location = new System.Drawing.Point(0, 0);
             this.grbAlumno.Margin = new System.Windows.Forms.Padding(10);
             this.grbAlumno.Name = "grbAlumno";
             this.grbAlumno.Padding = new System.Windows.Forms.Padding(5);
-            this.grbAlumno.Size = new System.Drawing.Size(884, 195);
+            this.grbAlumno.Size = new System.Drawing.Size(884, 162);
             this.grbAlumno.TabIndex = 35;
             this.grbAlumno.TabStop = false;
             this.grbAlumno.Text = "ALUMNO";
+            this.grbAlumno.Enter += new System.EventHandler(this.grbAlumno_Enter);
             // 
             // cmbCarrera
             // 

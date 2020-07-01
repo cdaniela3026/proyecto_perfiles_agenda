@@ -59,5 +59,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void FrmPerfiles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

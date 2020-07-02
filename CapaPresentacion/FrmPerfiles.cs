@@ -51,7 +51,9 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmRevisiones frm = new FrmRevisiones();
+            //esta variable debería corresponder a la cantidad de revisiones que tiene el perfil seleccionado
+            int cantidadRevisiones = 1;
+            FrmRevisiones2 frm = new FrmRevisiones2(cantidadRevisiones);
             frm.Show();
         }
     }

@@ -78,7 +78,7 @@
             this.btnBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarAgenda.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnBuscarAgenda.Location = new System.Drawing.Point(728, 10);
-            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarAgenda.Name = "btnBuscarAgenda";
             this.btnBuscarAgenda.Size = new System.Drawing.Size(72, 27);
             this.btnBuscarAgenda.TabIndex = 25;
@@ -91,7 +91,7 @@
             this.txtBuscarAgenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarAgenda.Location = new System.Drawing.Point(566, 11);
-            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscarAgenda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarAgenda.Name = "txtBuscarAgenda";
             this.txtBuscarAgenda.Size = new System.Drawing.Size(155, 23);
             this.txtBuscarAgenda.TabIndex = 24;
@@ -122,7 +122,7 @@
             // dtgDefensaExterna
             // 
             this.dtgDefensaExterna.AutoGenerateColumns = false;
-            this.dtgDefensaExterna.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgDefensaExterna.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDefensaExterna.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgDefensaExterna.BackgroundColor = System.Drawing.SystemColors.ControlDark;
             this.dtgDefensaExterna.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -136,7 +136,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgDefensaExterna.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgDefensaExterna.ColumnHeadersHeight = 28;
+            this.dtgDefensaExterna.ColumnHeadersHeight = 34;
             this.dtgDefensaExterna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgDefensaExterna.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -156,12 +156,13 @@
             this.dtgDefensaExterna.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dtgDefensaExterna.Location = new System.Drawing.Point(0, 0);
             this.dtgDefensaExterna.Name = "dtgDefensaExterna";
+            this.dtgDefensaExterna.ReadOnly = true;
             this.dtgDefensaExterna.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgDefensaExterna.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -182,8 +183,8 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.Visible = false;
-            this.idDataGridViewTextBoxColumn.Width = 42;
             // 
             // fechaDefensaDataGridViewTextBoxColumn
             // 
@@ -191,7 +192,7 @@
             this.fechaDefensaDataGridViewTextBoxColumn.HeaderText = "Fecha_Defensa";
             this.fechaDefensaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.fechaDefensaDataGridViewTextBoxColumn.Name = "fechaDefensaDataGridViewTextBoxColumn";
-            this.fechaDefensaDataGridViewTextBoxColumn.Width = 130;
+            this.fechaDefensaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // horaDataGridViewTextBoxColumn
             // 
@@ -199,7 +200,7 @@
             this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
             this.horaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
-            this.horaDataGridViewTextBoxColumn.Width = 62;
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // aulaDataGridViewTextBoxColumn
             // 
@@ -207,7 +208,7 @@
             this.aulaDataGridViewTextBoxColumn.HeaderText = "Aula";
             this.aulaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.aulaDataGridViewTextBoxColumn.Name = "aulaDataGridViewTextBoxColumn";
-            this.aulaDataGridViewTextBoxColumn.Width = 59;
+            this.aulaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tipoDataGridViewTextBoxColumn
             // 
@@ -215,7 +216,7 @@
             this.tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
             this.tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
-            this.tipoDataGridViewTextBoxColumn.Width = 58;
+            this.tipoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // temaDataGridViewTextBoxColumn
             // 
@@ -223,7 +224,7 @@
             this.temaDataGridViewTextBoxColumn.HeaderText = "Tema";
             this.temaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.temaDataGridViewTextBoxColumn.Name = "temaDataGridViewTextBoxColumn";
-            this.temaDataGridViewTextBoxColumn.Width = 66;
+            this.temaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // registroDataGridViewTextBoxColumn
             // 
@@ -231,7 +232,7 @@
             this.registroDataGridViewTextBoxColumn.HeaderText = "Registro";
             this.registroDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.registroDataGridViewTextBoxColumn.Name = "registroDataGridViewTextBoxColumn";
-            this.registroDataGridViewTextBoxColumn.Width = 85;
+            this.registroDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
@@ -239,7 +240,7 @@
             this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
             this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 82;
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // apellidoDataGridViewTextBoxColumn
             // 
@@ -247,7 +248,7 @@
             this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
             this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.Width = 83;
+            this.apellidoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // carreraDataGridViewTextBoxColumn
             // 
@@ -255,7 +256,7 @@
             this.carreraDataGridViewTextBoxColumn.HeaderText = "Carrera";
             this.carreraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.carreraDataGridViewTextBoxColumn.Name = "carreraDataGridViewTextBoxColumn";
-            this.carreraDataGridViewTextBoxColumn.Width = 82;
+            this.carreraDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // facultadDataGridViewTextBoxColumn
             // 
@@ -263,7 +264,7 @@
             this.facultadDataGridViewTextBoxColumn.HeaderText = "Facultad";
             this.facultadDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.facultadDataGridViewTextBoxColumn.Name = "facultadDataGridViewTextBoxColumn";
-            this.facultadDataGridViewTextBoxColumn.Width = 87;
+            this.facultadDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // viewDefensasBindingSource
             // 
@@ -278,8 +279,8 @@
             this.ClientSize = new System.Drawing.Size(856, 537);
             this.Controls.Add(this.pnlDataGrid);
             this.Controls.Add(this.pnlBuscar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
             this.pnlBuscar.ResumeLayout(false);

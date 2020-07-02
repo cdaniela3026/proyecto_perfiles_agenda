@@ -16,6 +16,8 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+        int posY = 0;
+        int posX = 0;
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -30,6 +32,25 @@ namespace CapaPresentacion
         private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pnlBarraTitulo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                posX = e.X;
+                posY = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - posX);
+                Top = Top + (e.Y - posY);
+            }
+        }
+
+        private void btnCancelarNuevaD_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

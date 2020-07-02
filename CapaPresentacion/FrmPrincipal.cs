@@ -71,8 +71,12 @@ namespace CapaPresentacion
                 frmNuevaDefensaExterna.BringToFront();
                 return;
             }
+            /*frmNuevaDefensaExterna = new FrmNuevaDefensaExterna();
+            frmNuevaDefensaExterna.Show();*/
+            ///////////////SE ESTA PONIENDO DENTRO DEL FORMULARIO PRINCIPAL//////////
+            lblTitulo.Text = "NUEVA DEFENSA";
             frmNuevaDefensaExterna = new FrmNuevaDefensaExterna();
-            frmNuevaDefensaExterna.Show();
+            abrirFrmHijo(frmNuevaDefensaExterna);
         }
         private void btnHome_Click(object sender, EventArgs e)
         {

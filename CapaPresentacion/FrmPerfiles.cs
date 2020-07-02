@@ -51,7 +51,7 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmRevisiones frm = new FrmRevisiones();
+            FrmRevisiones2 frm = new FrmRevisiones2();
             frm.Show();
         }
     }

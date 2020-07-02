@@ -108,6 +108,7 @@
             this.rbTribunal2.TabIndex = 24;
             this.rbTribunal2.Text = "Tribunal 2";
             this.rbTribunal2.UseVisualStyleBackColor = true;
+            this.rbTribunal2.CheckedChanged += new System.EventHandler(this.rbTribunal2_CheckedChanged);
             // 
             // rbTribunal1
             // 
@@ -124,13 +125,14 @@
             this.rbTribunal1.TabStop = true;
             this.rbTribunal1.Text = "Tribunal 1";
             this.rbTribunal1.UseVisualStyleBackColor = true;
+            this.rbTribunal1.CheckedChanged += new System.EventHandler(this.rbTribunal1_CheckedChanged);
             // 
             // dttDevolucionAlumno
             // 
             this.dttDevolucionAlumno.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttDevolucionAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttDevolucionAlumno.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttDevolucionAlumno.Location = new System.Drawing.Point(25, 389);
+            this.dttDevolucionAlumno.Location = new System.Drawing.Point(25, 380);
             this.dttDevolucionAlumno.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dttDevolucionAlumno.Name = "dttDevolucionAlumno";
             this.dttDevolucionAlumno.Size = new System.Drawing.Size(157, 24);
@@ -142,7 +144,7 @@
             this.dttDevolucionTribunal.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttDevolucionTribunal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttDevolucionTribunal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttDevolucionTribunal.Location = new System.Drawing.Point(25, 323);
+            this.dttDevolucionTribunal.Location = new System.Drawing.Point(25, 314);
             this.dttDevolucionTribunal.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dttDevolucionTribunal.Name = "dttDevolucionTribunal";
             this.dttDevolucionTribunal.Size = new System.Drawing.Size(157, 24);
@@ -154,7 +156,7 @@
             this.dttLimiteSugerido.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttLimiteSugerido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttLimiteSugerido.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttLimiteSugerido.Location = new System.Drawing.Point(426, 257);
+            this.dttLimiteSugerido.Location = new System.Drawing.Point(426, 248);
             this.dttLimiteSugerido.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dttLimiteSugerido.Name = "dttLimiteSugerido";
             this.dttLimiteSugerido.Size = new System.Drawing.Size(157, 24);
@@ -166,7 +168,7 @@
             this.dttEntregaTribunal.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttEntregaTribunal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttEntregaTribunal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttEntregaTribunal.Location = new System.Drawing.Point(25, 257);
+            this.dttEntregaTribunal.Location = new System.Drawing.Point(25, 248);
             this.dttEntregaTribunal.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dttEntregaTribunal.Name = "dttEntregaTribunal";
             this.dttEntregaTribunal.Size = new System.Drawing.Size(157, 24);
@@ -178,7 +180,7 @@
             this.dttEntregaAlumno.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttEntregaAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dttEntregaAlumno.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttEntregaAlumno.Location = new System.Drawing.Point(25, 193);
+            this.dttEntregaAlumno.Location = new System.Drawing.Point(25, 184);
             this.dttEntregaAlumno.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dttEntregaAlumno.Name = "dttEntregaAlumno";
             this.dttEntregaAlumno.Size = new System.Drawing.Size(157, 24);
@@ -189,7 +191,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(423, 234);
+            this.label5.Location = new System.Drawing.Point(423, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(355, 18);
             this.label5.TabIndex = 51;
@@ -199,7 +201,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 365);
+            this.label2.Location = new System.Drawing.Point(22, 356);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(392, 18);
             this.label2.TabIndex = 47;
@@ -209,7 +211,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 299);
+            this.label3.Location = new System.Drawing.Point(22, 290);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(350, 18);
             this.label3.TabIndex = 48;
@@ -219,7 +221,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 234);
+            this.label4.Location = new System.Drawing.Point(22, 225);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(364, 18);
             this.label4.TabIndex = 49;
@@ -229,7 +231,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(22, 169);
+            this.label26.Location = new System.Drawing.Point(22, 160);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(363, 18);
             this.label26.TabIndex = 50;
@@ -298,7 +300,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(580, 401);
+            this.btnCancelar.Location = new System.Drawing.Point(580, 392);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(82, 38);
@@ -314,7 +316,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(692, 401);
+            this.btnGuardar.Location = new System.Drawing.Point(692, 392);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(82, 38);
@@ -325,7 +327,7 @@
             // txtObservaciones
             // 
             this.txtObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservaciones.Location = new System.Drawing.Point(426, 310);
+            this.txtObservaciones.Location = new System.Drawing.Point(426, 301);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(352, 83);
@@ -335,7 +337,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(423, 289);
+            this.label6.Location = new System.Drawing.Point(423, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 18);
             this.label6.TabIndex = 59;

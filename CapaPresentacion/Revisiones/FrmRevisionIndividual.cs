@@ -12,9 +12,20 @@ namespace CapaPresentacion
 {
     public partial class FrmRevisionIndividual : Form
     {
+        string nroTribunal = "1";
         public FrmRevisionIndividual()
         {
             InitializeComponent();
+        }
+        public void reiniciarValores()
+        {
+            txtTribunal.Text = "";
+            txtObservaciones.Text = "";
+            dttDevolucionAlumno.Value = DateTime.Parse("12/12/2000");
+            dttDevolucionTribunal.Value = DateTime.Parse("12/12/2000");
+            dttEmpaste.Value = DateTime.Parse("12/12/2000");
+            dttEntregaAlumno.Value = DateTime.Parse("12/12/2000");
+            dttEntregaTribunal.Value = DateTime.Parse("12/12/2000");
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -31,6 +42,20 @@ namespace CapaPresentacion
         {
             FrmRevisiones2 frm = new FrmRevisiones2();
             frm.Close();
+        }
+
+        private void rbTribunal2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.nroTribunal = "2";
+            reiniciarValores();
+            txtTribunal.Text = nroTribunal;
+        }
+
+        private void rbTribunal1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.nroTribunal = "1";
+            reiniciarValores();
+            txtTribunal.Text = nroTribunal;
         }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Revisiones
 {
-    public partial class Revision1 : Form
+    public partial class FrmGeneral : Form
     {
-        public Revision1()
+        public FrmGeneral()
         {
             InitializeComponent();
-        }
-
-        private void Revision1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

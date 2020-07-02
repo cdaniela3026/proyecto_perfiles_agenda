@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion.Revisiones
 {
-    partial class General
+    partial class FrmGeneral
     {
         /// <summary>
         /// Required designer variable.

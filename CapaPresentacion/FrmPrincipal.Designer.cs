@@ -57,6 +57,7 @@
             this.btnRelInter = new FontAwesome.Sharp.IconButton();
             this.btnDerecho = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlFrmHijo = new System.Windows.Forms.Panel();
             this.pnlCarrerasEmpresariales = new System.Windows.Forms.Panel();
             this.btnComunicacion = new FontAwesome.Sharp.IconButton();
@@ -75,7 +76,6 @@
             this.btnElectronica = new FontAwesome.Sharp.IconButton();
             this.btnPetrolera = new FontAwesome.Sharp.IconButton();
             this.btnIndustrial = new FontAwesome.Sharp.IconButton();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlNuevaDefensa.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -620,6 +620,7 @@
             this.btnPsicologia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPsicologia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPsicologia.UseVisualStyleBackColor = false;
+            this.btnPsicologia.Click += new System.EventHandler(this.btnPsicologia_Click);
             // 
             // btnRelInter
             // 
@@ -689,6 +690,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(860, 45);
             this.panel2.TabIndex = 15;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitulo.Location = new System.Drawing.Point(125, 9);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(598, 29);
+            this.lblTitulo.TabIndex = 24;
+            this.lblTitulo.Text = "Título";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlFrmHijo
             // 
@@ -1174,19 +1188,6 @@
             this.btnIndustrial.UseVisualStyleBackColor = false;
             this.btnIndustrial.Click += new System.EventHandler(this.btnIndustrial_Click);
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(125, 9);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(598, 29);
-            this.lblTitulo.TabIndex = 24;
-            this.lblTitulo.Text = "Título";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1198,6 +1199,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlBarraTitulo);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPrincipal";
             this.Text = "UTEPSA";

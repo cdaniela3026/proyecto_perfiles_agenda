@@ -584,11 +584,12 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(141, 18);
             this.tabControl1.Location = new System.Drawing.Point(6, 177);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(775, 310);
-            this.tabControl1.TabIndex = 38;
+            this.tabControl1.Size = new System.Drawing.Size(686, 281);
+            this.tabControl1.TabIndex = 28;
             // 
             // tabPage3
             // 
@@ -611,10 +612,10 @@
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(767, 279);
+            this.tabPage3.Size = new System.Drawing.Size(678, 255);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "       TRIBUNAL 1";
             // 
@@ -622,7 +623,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(443, 230);
+            this.label31.Location = new System.Drawing.Point(375, 210);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(71, 18);
             this.label31.TabIndex = 40;
@@ -635,35 +636,35 @@
             this.comboBox1.Items.AddRange(new object[] {
             "APROBADO",
             "REPROBADO"});
-            this.comboBox1.Location = new System.Drawing.Point(545, 226);
+            this.comboBox1.Location = new System.Drawing.Point(458, 206);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(206, 28);
             this.comboBox1.TabIndex = 40;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(545, 176);
+            this.textBox7.Location = new System.Drawing.Point(458, 168);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(206, 24);
             this.textBox7.TabIndex = 47;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(545, 132);
+            this.textBox8.Location = new System.Drawing.Point(458, 124);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(206, 24);
             this.textBox8.TabIndex = 48;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(545, 87);
+            this.textBox9.Location = new System.Drawing.Point(458, 79);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(206, 24);
             this.textBox9.TabIndex = 49;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(545, 40);
+            this.textBox10.Location = new System.Drawing.Point(458, 32);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(206, 24);
             this.textBox10.TabIndex = 50;
@@ -671,7 +672,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 184);
+            this.label1.Location = new System.Drawing.Point(6, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 18);
             this.label1.TabIndex = 43;
@@ -680,7 +681,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 139);
+            this.label2.Location = new System.Drawing.Point(2, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 18);
             this.label2.TabIndex = 44;
@@ -689,7 +690,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 94);
+            this.label3.Location = new System.Drawing.Point(2, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 18);
             this.label3.TabIndex = 45;
@@ -698,7 +699,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(16, 46);
+            this.label26.Location = new System.Drawing.Point(6, 26);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(176, 18);
             this.label26.TabIndex = 46;
@@ -707,7 +708,7 @@
             // dateTimePicker7
             // 
             this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker7.Location = new System.Drawing.Point(261, 178);
+            this.dateTimePicker7.Location = new System.Drawing.Point(216, 170);
             this.dateTimePicker7.Name = "dateTimePicker7";
             this.dateTimePicker7.Size = new System.Drawing.Size(128, 24);
             this.dateTimePicker7.TabIndex = 35;
@@ -715,7 +716,7 @@
             // dateTimePicker8
             // 
             this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker8.Location = new System.Drawing.Point(261, 133);
+            this.dateTimePicker8.Location = new System.Drawing.Point(216, 120);
             this.dateTimePicker8.Name = "dateTimePicker8";
             this.dateTimePicker8.Size = new System.Drawing.Size(128, 24);
             this.dateTimePicker8.TabIndex = 36;
@@ -723,7 +724,7 @@
             // dateTimePicker9
             // 
             this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker9.Location = new System.Drawing.Point(261, 88);
+            this.dateTimePicker9.Location = new System.Drawing.Point(216, 73);
             this.dateTimePicker9.Name = "dateTimePicker9";
             this.dateTimePicker9.Size = new System.Drawing.Size(128, 24);
             this.dateTimePicker9.TabIndex = 37;
@@ -731,7 +732,7 @@
             // dateTimePicker10
             // 
             this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker10.Location = new System.Drawing.Point(261, 40);
+            this.dateTimePicker10.Location = new System.Drawing.Point(216, 27);
             this.dateTimePicker10.Name = "dateTimePicker10";
             this.dateTimePicker10.Size = new System.Drawing.Size(128, 24);
             this.dateTimePicker10.TabIndex = 38;
@@ -740,7 +741,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(443, 180);
+            this.label27.Location = new System.Drawing.Point(350, 175);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(96, 18);
             this.label27.TabIndex = 39;
@@ -750,7 +751,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(443, 137);
+            this.label28.Location = new System.Drawing.Point(350, 120);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(96, 18);
             this.label28.TabIndex = 40;
@@ -760,7 +761,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(443, 94);
+            this.label29.Location = new System.Drawing.Point(350, 78);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(96, 18);
             this.label29.TabIndex = 41;
@@ -770,7 +771,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(443, 46);
+            this.label30.Location = new System.Drawing.Point(350, 32);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(96, 18);
             this.label30.TabIndex = 42;
@@ -797,10 +798,10 @@
             this.tabPage4.Controls.Add(this.label24);
             this.tabPage4.Controls.Add(this.label25);
             this.tabPage4.Controls.Add(this.label32);
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(767, 279);
+            this.tabPage4.Size = new System.Drawing.Size(678, 255);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "TRIBUNAL 2";
             // 

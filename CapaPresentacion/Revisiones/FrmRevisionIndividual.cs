@@ -40,7 +40,7 @@ namespace CapaPresentacion
 
         private void btnCancelarNuevop_Click(object sender, EventArgs e)
         {
-            FrmRevisiones2 frm = new FrmRevisiones2();
+            FrmRevisiones frm = new FrmRevisiones();
             frm.Close();
         }
 

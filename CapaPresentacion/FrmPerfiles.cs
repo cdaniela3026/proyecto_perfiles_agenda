@@ -53,7 +53,7 @@ namespace CapaPresentacion
         {
             //esta variable debería corresponder a la cantidad de revisiones que tiene el perfil seleccionado
             int cantidadRevisiones = 1;
-            FrmRevisiones2 frm = new FrmRevisiones2(cantidadRevisiones);
+            FrmRevisiones frm = new FrmRevisiones(cantidadRevisiones);
             frm.Show();
         }
     }

@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:proyecto_perfiles_agenda}/bd/perfiles.db",
+            "driver": "SQLite",
+            "name": "perfiles",
+            "previewLimit": 50
+        }
+    ]
+}

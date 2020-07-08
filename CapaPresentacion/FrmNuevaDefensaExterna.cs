@@ -52,5 +52,17 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void btnElegirTutor_Click(object sender, EventArgs e)
+        {
+            FrmTesis frm = new FrmTesis();
+            frm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmTutor frm = new FrmTutor();
+            frm.Show();
+        }
     }
 }

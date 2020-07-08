@@ -50,5 +50,10 @@ namespace CapaPresentacion
             FrmInstitucion frm1 = new FrmInstitucion();
             frm1.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

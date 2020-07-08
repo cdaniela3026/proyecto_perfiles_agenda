@@ -46,11 +46,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtTutor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,7 +148,7 @@
             this.btnGuardarNuevoP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarNuevoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarNuevoP.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarNuevoP.Location = new System.Drawing.Point(771, 440);
+            this.btnGuardarNuevoP.Location = new System.Drawing.Point(950, 538);
             this.btnGuardarNuevoP.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarNuevoP.Name = "btnGuardarNuevoP";
             this.btnGuardarNuevoP.Size = new System.Drawing.Size(82, 38);
@@ -163,7 +163,7 @@
             this.btnCancelarNuevaD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarNuevaD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarNuevaD.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarNuevaD.Location = new System.Drawing.Point(683, 440);
+            this.btnCancelarNuevaD.Location = new System.Drawing.Point(864, 538);
             this.btnCancelarNuevaD.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarNuevaD.Name = "btnCancelarNuevaD";
             this.btnCancelarNuevaD.Size = new System.Drawing.Size(82, 38);
@@ -253,6 +253,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label9);
@@ -277,13 +280,31 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.dtFechaDefensa);
             this.panel1.Controls.Add(this.dtHora);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(857, 490);
+            this.panel1.Size = new System.Drawing.Size(1036, 590);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(27, 267);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(72, 18);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Registro";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(29, 297);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(143, 20);
+            this.textBox3.TabIndex = 46;
             // 
             // button1
             // 
@@ -320,31 +341,12 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Tutor:";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(27, 267);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 18);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "Registro";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(29, 297);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 46;
-            // 
             // FrmNuevaDefensaExterna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(857, 490);
+            this.ClientSize = new System.Drawing.Size(1047, 601);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
